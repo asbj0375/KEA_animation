@@ -198,7 +198,6 @@
     background-image: url(Produktion/SVG/titlesk%C3%A6rm%20uden%20knapper.svg);
     background-size: cover;
     display: none;
-    width: 100vw;
     height: 56.25vw;
     margin: auto;
     position: absolute;
@@ -250,4 +249,58 @@
     background-size: 100%;
     background-repeat: no-repeat;
 
+
+
+}
+
+.hop_gulerod {
+    animation-name: hop_gulerod;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes hop_gulerod {
+    0% {
+        transform: translate(1vw);
+    }
+
+    100 {
+        transform: translate(0vw);
+    }
+}
+
+.hop_broccoli {
+    animation-name: hop_broccoli;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes hop_broccoli {
+    0% {
+        transform: rotate(15deg)translate(0vw);
+    }
+
+    100 {
+        transform: translate(2vw);
+    }
+}
+
+.hop_frikadelle {
+    animation-name: hop_frikadelle;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+@keyframes hop_frikadelle {
+    0% {
+        transform: rotate(30deg)translate(0vw) skewX(40deg);
+    }
+
+    100 {
+        transform: translate(5vw);
+    }
 }
