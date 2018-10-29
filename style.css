@@ -196,8 +196,8 @@
 
 #start {
     background-image: url(Produktion/SVG/titlesk%C3%A6rm%20uden%20knapper.svg);
-    background-size: cover;
-    display: none;
+    background-size: 100%;
+    width: 100vw;
     height: 56.25vw;
     margin: auto;
     position: absolute;
@@ -207,7 +207,7 @@
     background-size: 100%;
     background-repeat: no-repeat;
     background-color: white;
-
+    display: none;
 }
 
 #settings {
@@ -220,6 +220,7 @@
     position: absolute;
     background-size: 100%;
     background-repeat: no-repeat;
+
 
 
 }
@@ -289,18 +290,35 @@
 
 .hop_frikadelle {
     animation-name: hop_frikadelle;
-    animation-duration: 1s;
+    animation-duration: 3s;
     animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    animation-timing-function: ease-in
 }
 
 
 @keyframes hop_frikadelle {
     0% {
-        transform: rotate(30deg)translate(0vw) skewX(40deg);
+        transform: translate(0vw) skewX(50deg);
     }
 
     100 {
-        transform: translate(5vw);
+        transform: translate(20vw);
     }
 }
+
+.titelskaerm {
+    animation-name: titelskaerm;
+    animation-duration: 1.75s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes titelskaerm {
+    from {
+        transform: translate(10vw));
+    }
+
+    to {
+        transform: translate(100vw);
+    }
