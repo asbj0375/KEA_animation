@@ -207,6 +207,7 @@
     background-size: 100%;
     background-repeat: no-repeat;
     background-color: white;
+    display: none;
 
 }
 
@@ -266,25 +267,25 @@
         transform: translate(1vw);
     }
 
-    100 {
+    100% {
         transform: translate(0vw);
     }
 }
 
 .hop_broccoli {
     animation-name: hop_broccoli;
-    animation-duration: 1s;
+    animation-duration: 0.7s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
 @keyframes hop_broccoli {
-    0% {
+    from {
         transform: rotate(15deg)translate(0vw);
     }
 
-    100 {
-        transform: translate(2vw);
+    to {
+        transform: translate(1vw);
     }
 }
 
@@ -297,12 +298,12 @@
 
 
 @keyframes hop_frikadelle {
-    0% {
+    from {
         transform: translateY(0.5vw);
     }
 
-    100 {
-        transform: translate(20vw);
+    to {
+        transform: translateY(-0.5vw);
     }
 }
 
