@@ -207,7 +207,7 @@
     background-size: 100%;
     background-repeat: no-repeat;
     background-color: white;
-    display: none;
+
 }
 
 #settings {
@@ -316,9 +316,11 @@
 
 @keyframes titelskaerm {
     from {
-        transform: translate(10vw));
+        transform: translate(10vw);
+        opacity: 100;
     }
 
     to {
-        transform: translate(-100vw, -100vw);
+        transform: translate(-150vw, -150vw);
+        opacity: 0;
     }
