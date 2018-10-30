@@ -3,7 +3,7 @@
     margin: 0;
 }
 
-#screen {
+ #screen {
     background-image: url(Produktion/SVG/baggrund_final.svg);
     background-size: cover;
     width: 100vw;
@@ -13,7 +13,14 @@
     overflow: hidden;
     top: 0vw;
     left: 0vw;
+
+     /*  touch-action: none;*/
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
+
+
 
 
 #broccoli {
@@ -260,15 +267,16 @@
     animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+    animation-direction: alternate;
 }
 
 @keyframes hop_gulerod {
-    0% {
+    from {
         transform: translate(1vw);
     }
 
-    100% {
-        transform: translate(0vw);
+    to {
+        transform: translate(-0.5vw);
     }
 }
 
@@ -277,11 +285,12 @@
     animation-duration: 0.7s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+    animation-direction: alternate;
 }
 
 @keyframes hop_broccoli {
     from {
-        transform: rotate(15deg)translate(0vw);
+        transform: rotate(15deg)translate(-1vw);
     }
 
     to {
@@ -293,7 +302,8 @@
     animation-name: hop_frikadelle;
     animation-duration: 0.8s;
     animation-iteration-count: infinite;
-    animation-timing-function: ease-in
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
 }
 
 
@@ -325,3 +335,17 @@
         transform: translate(-150vw, -150vw);
         opacity: 0;
     }
+
+.dissappear {
+  animation-name: dissappear_kf;
+  animation-duration: .7s;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier(.59,-0.56,.77,1.34);
+  animation-fill-mode: forwards;
+
+    }
+
+.paused {
+  animation-play-state: paused;
+}
+
