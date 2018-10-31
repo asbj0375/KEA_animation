@@ -3,7 +3,7 @@
     margin: 0;
 }
 
- #screen {
+#screen {
     background-image: url(Produktion/SVG/baggrund_final.svg);
     background-size: cover;
     width: 100vw;
@@ -14,10 +14,10 @@
     top: 0vw;
     left: 0vw;
 
-     /*  touch-action: none;*/
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
+    /*  touch-action: none;*/
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 
@@ -214,7 +214,20 @@
     background-size: 100%;
     background-repeat: no-repeat;
     background-color: white;
-    display: none;
+}
+
+#play {
+    background-image: url(Produktion/SVG/spil_knap.svg);
+    background-size: 100%;
+    width: 15.5vw;
+    height: 15.5vw;
+    margin: auto;
+    position: absolute;
+    overflow: hidden;
+    top: 20vw;
+    left: 52vw;
+    background-size: 100%;
+    background-repeat: no-repeat;
 
 }
 
@@ -325,27 +338,84 @@
 
 }
 
+
+/*
 @keyframes titelskaerm {
     from {
         transform: translate(10vw);
         opacity: 100;
     }
 
+
     to {
         transform: translate(-150vw, -150vw);
         opacity: 0;
     }
+*/
 
 .dissappear {
-  animation-name: dissappear_kf;
-  animation-duration: .7s;
-  animation-iteration-count: 1;
-  animation-timing-function: cubic-bezier(.59,-0.56,.77,1.34);
-  animation-fill-mode: forwards;
+    animation-name: dissappear_kf;
+    animation-duration: .7s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(.59, -0.56, .77, 1.34);
+    animation-fill-mode: forwards;
+
+}
+
+.paused {
+    animation-play-state: paused;
+}
+
+/* effekter */
+.hide {
+    visibility: hidden;
+}
+
+.show {
+    visibility: visible;
+}
+
+.blur {
+    filter: blur(5px) brightness(80%);
+}
+
+.fade_out {
+    animation-name: fadeout_kf;
+    animation-duration: 2.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeout_kf {
+    0% {
+        opacity: 1;
+        transform: translate(-150vw, -150vw);
 
     }
 
-.paused {
-  animation-play-state: paused;
+    100% {
+        opacity: 0;
+        transform: translate(-150vw, -150vw);
+        opacity: 0;
+    }
 }
 
+.pulse {
+    animation-name: pulse_kf;
+    animation-duration: 1.7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+
+
+@keyframes pulse_kf {
+    0% {
+        transform: scale(0.94);
+    }
+
+    100% {
+        transform: scale(1);
+
+    }
+}
