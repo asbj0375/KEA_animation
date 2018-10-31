@@ -16,8 +16,10 @@ function showStart() {
     document.querySelector("#start").classList.add("show");
     // Start animation på start-knap
     document.querySelector("#play").classList.add("pulse");
+    // Start animation på settings-knap
+    document.querySelector("#settings_button").classList.add("spin");
 
-    //Når der er klikket på start knap gå til hide start
+    //Når der er klikket på start knap gå til hideStart
 
     document.querySelector("#play").addEventListener("click", hideStart);
 
@@ -27,6 +29,8 @@ function hideStart() {
     console.log("hideStart");
     // Stop animation på start-knap
     document.querySelector("#play").classList.remove("pulse");
+    // Stop animation på settings-knap
+    document.querySelector("#settings_button").classList.remove("spin");
     // Fade startskærm ud
     document.querySelector("#start").classList.add("fade_out");
 

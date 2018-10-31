@@ -338,6 +338,18 @@
 
 }
 
+#settings_button {
+    background-image: url(Produktion/SVG/settings_menu.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 8vw;
+    height: 8vw;
+    top: 2vw;
+    left: 90vw;
+    position: absolute;
+    z-index: 1;
+    background-size: 100%;
+}
 
 /*
 @keyframes titelskaerm {
@@ -381,8 +393,9 @@
 
 .fade_out {
     animation-name: fadeout_kf;
-    animation-duration: 2.5s;
-    animation-iteration-count: 1;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
     animation-fill-mode: forwards;
 }
 
@@ -411,11 +424,32 @@
 
 @keyframes pulse_kf {
     0% {
-        transform: scale(0.94);
+        transform: scale(0.90);
+
+
     }
 
     100% {
         transform: scale(1);
 
+    }
+}
+
+.spin {
+    animation-name: spin_kf;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+
+@keyframes spin_kf {
+    0% {
+        transform: rotate(0deg);
+
+    }
+
+    100% {
+        transform: rotate(360deg);
     }
 }
