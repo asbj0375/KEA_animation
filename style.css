@@ -155,6 +155,7 @@
     position: absolute;
     background-size: 100%;
     background-repeat: no-repeat;
+    display: none;
 
 }
 
@@ -167,7 +168,6 @@
     position: absolute;
     background-size: 100%;
     background-repeat: no-repeat;
-
 
 }
 
@@ -270,6 +270,7 @@
     left: 52vw;
     background-size: 100%;
     background-repeat: no-repeat;
+    cursor: pointer;
 
 }
 
@@ -391,6 +392,7 @@
     position: absolute;
     z-index: 1;
     background-size: 100%;
+    cursor: pointer;
 }
 
 /*
@@ -436,7 +438,6 @@
 .fade_out {
     animation-name: fadeout_kf;
     animation-duration: 3.5s;
-    animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
 }
