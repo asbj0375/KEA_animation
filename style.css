@@ -171,16 +171,24 @@
 
 }
 
-#liv {
-    background-image: url(Produktion/SVG/liv_1.svg);
-    width: 22.19vw;
-    height: 6.5vw;
-    top: 48vw;
-    left: 30vw;
+
+
+#energy {
     position: absolute;
+    left: 30vw;
+    top: 48vw;
+    width: 6rem;
+    /*  outline: 2px solid red;*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.heart {
+    width: 2rem;
+    height: 2rem;
+    background-image: url(Produktion/SVG/liv.svg);
     background-size: 100%;
     background-repeat: no-repeat;
-
 }
 
 #glad {
@@ -188,7 +196,7 @@
     width: 20vw;
     height: 18vw;
     top: 37vw;
-    left: 3vw;
+    left: 2vw;
     position: absolute;
     background-size: 100%;
     background-repeat: no-repeat;
