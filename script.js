@@ -18,10 +18,14 @@ function showStart() {
     document.querySelector("#play").classList.add("pulse");
     // Start animation på settings-knap
     document.querySelector("#settings_button").classList.add("spin");
+    // Start animation på frikadelle og grøntsager
+    document.querySelector("#frikadelle_ben").classList.add("wiggle")
+
 
     //Når der er klikket på start knap gå til hideStart
 
     document.querySelector("#play").addEventListener("click", hideStart);
+
 
 }
 

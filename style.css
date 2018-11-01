@@ -198,6 +198,29 @@
 
 }
 
+#frikadelle_ben {
+    background-image: url(Produktion/SVG/ben.svg);
+    width: 7vw;
+    height: 18vw;
+    top: 34vw;
+    left: 11.5vw;
+    position: absolute;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#broccoli_bat {
+    background-image: url(Produktion/SVG/haand_bat.svg);
+    width: 10vw;
+    height: 15vw;
+    top: 34vw;
+    left: 30vw;
+    position: absolute;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+
 
 /* GAMEOVER COMPLETE */
 
@@ -409,7 +432,7 @@
     100% {
         opacity: 0;
         transform: translate(-150vw, -150vw);
-        opacity: 0;
+
     }
 }
 
@@ -437,10 +460,10 @@
 
 .spin {
     animation-name: spin_kf;
-    animation-duration: 9s;
+    animation-duration: 25s;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: ease-in;
+    animation-direction: normal;
+    animation-timing-function: linear;
 }
 
 @keyframes spin_kf {
@@ -451,5 +474,25 @@
 
     100% {
         transform: rotate(360deg);
+    }
+}
+
+.wiggle {
+    animation-name: wiggle_kf;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+
+}
+
+@keyframes wiggle_kf {
+    0% {
+        transform: translate(0.2vw) skewY(-5deg);
+
+    }
+
+    100% {
+        transform: translate(0vw) skewY(-10deg);
     }
 }
