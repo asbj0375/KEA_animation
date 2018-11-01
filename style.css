@@ -213,19 +213,30 @@
     background-image: url(Produktion/SVG/haand_bat.svg);
     width: 10vw;
     height: 15vw;
-    top: 34vw;
-    left: 30vw;
+    top: 26vw;
+    left: 81vw;
     position: absolute;
     background-size: 100%;
     background-repeat: no-repeat;
 
 }
 
+#gulerod_smoke {
+    background-image: url(Produktion/SVG/r%C3%B8g.svg);
+    width: 10vw;
+    height: 15vw;
+    top: 39vw;
+    left: 59vw;
+    position: absolute;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
 
 /* GAMEOVER COMPLETE */
 
 #start {
-    background-image: url(Produktion/SVG/titlesk%C3%A6rm%20uden%20knapper.svg);
+    background-image: url(Produktion/SVG/titel_udenknap.svg);
     background-size: 100%;
     width: 100vw;
     height: 56.25vw;
@@ -494,5 +505,43 @@
 
     100% {
         transform: translate(0vw) skewY(-10deg);
+    }
+}
+
+.bat {
+    animation-name: bat_kf;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+
+
+}
+
+@keyframes bat_kf {
+    0% {
+        transform: rotate(0deg) skewY(0deg)
+    }
+
+    100% {
+        transform: rotate(3deg) skewY(10deg);
+    }
+}
+
+.smoke {
+    animation-name: smoke_kf;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: linear;
+}
+
+@keyframes smoke_kf {
+    0% {
+        transform: translate(0vw, -5vw);
+    }
+
+    100% {
+        transform: translate(.5vw, 0vw);
     }
 }

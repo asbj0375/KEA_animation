@@ -19,7 +19,10 @@ function showStart() {
     // Start animation på settings-knap
     document.querySelector("#settings_button").classList.add("spin");
     // Start animation på frikadelle og grøntsager
-    document.querySelector("#frikadelle_ben").classList.add("wiggle")
+    document.querySelector("#frikadelle_ben").classList.add("wiggle");
+    document.querySelector("#broccoli_bat").classList.add("bat");
+    document.querySelector("#gulerod_smoke").classList.add("smoke");
+
 
 
     //Når der er klikket på start knap gå til hideStart
