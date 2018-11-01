@@ -146,30 +146,46 @@
 
 /*UI*/
 
-#points {
-    background-image: url(Produktion/SVG/points.svg);
-    width: 20.8vw;
-    height: 5.9vw;
-    top: 48vw;
-    left: 77vw;
-    position: absolute;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    display: none;
 
-}
-
-#score {
+#points .score {
     background-image: url(Produktion/SVG/points1.svg);
-    width: 19.5vw;
-    height: 6vw;
-    top: 48vw;
-    left: 57vw;
+    width: 25vw;
+    height: 15vw;
     position: absolute;
     background-size: 100%;
     background-repeat: no-repeat;
+    top: 5vw;
+    left: -26vw;
+    pointer-events: none;
+}
+
+
+
+#points .antal {
+    width: 5rem;
+    height: 5rem;
+    left: 30vw;
+    pointer-events: none;
+}
+
+#points {
+    width: .5vw;
+    height: .5vw;
+    position: absolute;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    bottom: 14vw;
+    color: #fae01a;
+    font-size: 5rem;
+    font-family: sans-serif;
+    display: flex;
+    left: 75vw;
+    pointer-events: none;
+
 
 }
+
+
 
 
 
