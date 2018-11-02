@@ -23,13 +23,10 @@ function showStart() {
     document.querySelector("#broccoli_bat").classList.add("bat");
     document.querySelector("#gulerod_smoke").classList.add("smoke");
 
+    //Når der er klikket på start knap gå til hideStart
+    document.querySelector("#play").addEventListener("click", hideStart);
+
 }
-
-//Når der er klikket på start knap gå til hideStart
-
-document.querySelector("#play").addEventListener("click", hideStart);
-
-
 
 function hideStart() {
     console.log("hideStart");
@@ -50,8 +47,15 @@ function startGame() {
     // Skjul startskærm
 
     document.querySelector("#frikadelle").addEventListener("click", clickDunse);
+    document.querySelector("#frikadelle1").addEventListener("click", clickDunse);
+    document.querySelector("#frikadelle2").addEventListener("click", clickDunse);
     document.querySelector("#broccoli").addEventListener("click", clickBroccoli);
+    document.querySelector("#broccoli1").addEventListener("click", clickBroccoli);
+    document.querySelector("#broccoli2").addEventListener("click", clickBroccoli);
+    document.querySelector("#broccoli3").addEventListener("click", clickBroccoli);
     document.querySelector("#gulerod").addEventListener("click", clickGulerod);
+    document.querySelector("#gulerod1").addEventListener("click", clickGulerod);
+    document.querySelector("#gulerod2").addEventListener("click", clickGulerod);
 }
 
 
@@ -63,15 +67,28 @@ function clickDunse() {
     point++;
     console.log(point);
     document.querySelector(".antal").textContent = point;
+
+    console.log(this);
+    this.classList.add("hide");
+
+    gameStatus();
+
 }
 
 
 function clickBroccoli() {
     console.log("click broccoli");
-    liv--;
+
     console.log(liv);
     let heart = "#heart" + liv;
-    document.querySelector(heart).classList.add("fade_out");
+    document.querySelector(heart).classList.add("hide");
+    liv--;
+
+
+    console.log(this);
+    this.classList.add("hide");
+
+    gameStatus();
 }
 
 
@@ -81,7 +98,52 @@ function clickGulerod() {
     point--;
     console.log(point);
     document.querySelector(".antal").textContent = point;
+
+
+    console.log(this);
+    this.classList.add("hide");
+
+    gameStatus();
 }
+
+
+
+
+
+
+
+function gameStatus() {
+    if (liv <= 0) {
+        gameOver();
+
+        document.querySelector("#game_background").classList.add("blur");
+        document.querySelector("#gameover").classList.add("show");
+
+    }
+
+    if (point > 2) {
+        levelCompleted();
+
+    }
+
+}
+
+function gameOver() {
+    console.log("gameOver");
+
+}
+
+function levelCompleted() {
+    console.log("levelcomplete");
+    document.querySelector("#game_background").classList.add("blur");
+    document.querySelector("#levelcomplete").classList.add("show");
+
+}
+
+
+
+
+
 
 
 
