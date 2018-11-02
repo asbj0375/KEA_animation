@@ -1,0 +1,570 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#game_background {
+    background-image: url(Produktion/SVG/baggrund_final.svg);
+    background-size: cover;
+    width: 100vw;
+    height: 56.25vw;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    top: 0vw;
+    left: 0vw;
+
+    /*  touch-action: none;*/
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+
+
+
+#broccoli {
+    background-image: url(Produktion/SVG/Brocolli.svg);
+    width: 10vw;
+    height: 4.8vw;
+    top: 7.5vw;
+    left: 29vw;
+    position: absolute;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#broccoli1 {
+    background-image: url(Produktion/SVG/Brocolli.svg);
+    width: 10vw;
+    height: 4.8vw;
+    top: 38vw;
+    left: 42vw;
+    position: absolute;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+
+}
+
+#broccoli2 {
+    background-image: url(Produktion/SVG/Brocolli.svg);
+    width: 10vw;
+    height: 4.8vw;
+    top: 16vw;
+    left: 59.5vw;
+    position: absolute;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+
+#broccoli3 {
+    background-image: url(Produktion/SVG/Brocolli.svg);
+    width: 10vw;
+    height: 4.8vw;
+    top: 30.5vw;
+    left: 25vw;
+    position: absolute;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+
+#gulerod {
+    background-image: url(Produktion/SVG/gulerod.svg);
+    width: 10vw;
+    height: 4.8vw;
+    top: 30.5vw;
+    left: 59vw;
+    position: absolute;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+
+#gulerod1 {
+    background-image: url(Produktion/SVG/gulerod.svg);
+    width: 10vw;
+    height: 4.8vw;
+    top: 17.5vw;
+    left: 24vw;
+    position: absolute;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+
+#gulerod2 {
+    background-image: url(Produktion/SVG/gulerod.svg);
+    width: 10vw;
+    height: 4.8vw;
+    top: 8vw;
+    left: 43vw;
+    position: absolute;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+
+
+#frikadelle {
+    background-image: url(Produktion/SVG/frikadelle.svg);
+    width: 10vw;
+    height: 4.8vw;
+    top: 39vw;
+    left: 29vw;
+    position: absolute;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+
+#frikadelle1 {
+    background-image: url(Produktion/SVG/frikadelle.svg);
+    width: 10vw;
+    height: 4.8vw;
+    top: 8vw;
+    left: 55vw;
+    position: absolute;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+
+#frikadelle2 {
+    background-image: url(Produktion/SVG/frikadelle.svg);
+    width: 10vw;
+    height: 4.8vw;
+    top: 39vw;
+    left: 54.5vw;
+    position: absolute;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+
+/*UI*/
+
+
+#points .score {
+    background-image: url(Produktion/SVG/points1.svg);
+    width: 25vw;
+    height: 15vw;
+    position: absolute;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    top: 5vw;
+    left: -26vw;
+    pointer-events: none;
+}
+
+
+
+#points .antal {
+    width: 5rem;
+    height: 5rem;
+    left: 30vw;
+    pointer-events: none;
+}
+
+#points {
+    width: .5vw;
+    height: .5vw;
+    position: absolute;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    top: 43.3vw;
+    color: #fae01a;
+    font-size: 5.5rem;
+    font-family: monospace;
+    display: flex;
+    left: 75vw;
+    pointer-events: none;
+
+
+}
+
+
+
+
+#energy {
+    position: absolute;
+    left: 30vw;
+    top: 50vw;
+    width: 6rem;
+    /*  outline: 2px solid red;*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.heart {
+    width: 2rem;
+    height: 2rem;
+    background-image: url(Produktion/SVG/liv.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#glad {
+    background-image: url(Produktion/SVG/glad.svg);
+    width: 20vw;
+    height: 18vw;
+    top: 37vw;
+    left: 2vw;
+    position: absolute;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+
+
+
+}
+
+#frikadelle_ben {
+    background-image: url(Produktion/SVG/ben.svg);
+    width: 7vw;
+    height: 18vw;
+    top: 34vw;
+    left: 11.5vw;
+    position: absolute;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#broccoli_bat {
+    background-image: url(Produktion/SVG/haand_bat.svg);
+    width: 10vw;
+    height: 15vw;
+    top: 26vw;
+    left: 81vw;
+    position: absolute;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+
+#gulerod_smoke {
+    background-image: url(Produktion/SVG/r%C3%B8g.svg);
+    width: 10vw;
+    height: 15vw;
+    top: 39vw;
+    left: 59vw;
+    position: absolute;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+
+/* GAMEOVER COMPLETE */
+
+#start {
+    background-image: url(Produktion/SVG/titel_udenknap.svg);
+    background-size: 100%;
+    width: 100vw;
+    height: 56.25vw;
+    margin: auto;
+    position: absolute;
+    overflow: hidden;
+    top: 0vw;
+    left: 0vw;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+#play {
+    background-image: url(Produktion/SVG/spil_knap.svg);
+    background-size: 100%;
+    width: 15.5vw;
+    height: 15.5vw;
+    margin: auto;
+    position: absolute;
+    overflow: hidden;
+    top: 20vw;
+    left: 52vw;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+
+}
+
+#settings {
+    background-image: url(Produktion/SVG/settings_udenknap.svg);
+    display: none;
+    width: 73.5vw;
+    height: 38.9vw;
+    top: 7.5vw;
+    left: 9vw;
+    position: absolute;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+
+
+}
+
+#gameover {
+    background-image: url(Produktion/SVG/gameover_udenknap.svg);
+
+    width: 50vw;
+    height: 43.5vw;
+    top: 4vw;
+    left: 22vw;
+    position: absolute;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+
+#levelcomplete {
+    background-image: url(Produktion/SVG/complete_udenknap.svg);
+    width: 59.5vw;
+    height: 34vw;
+    top: 9vw;
+    left: 18.5vw;
+    position: absolute;
+    z-index: 1;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+
+
+}
+
+.hop_gulerod {
+    animation-name: hop_gulerod;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes hop_gulerod {
+    from {
+        transform: translate(1vw);
+    }
+
+    to {
+        transform: translate(-0.5vw);
+    }
+}
+
+.hop_broccoli {
+    animation-name: hop_broccoli;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes hop_broccoli {
+    from {
+        transform: rotate(15deg)translate(-1vw);
+    }
+
+    to {
+        transform: translate(1vw);
+    }
+}
+
+.hop_frikadelle {
+    animation-name: hop_frikadelle;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+}
+
+
+@keyframes hop_frikadelle {
+    from {
+        transform: translateY(0.5vw);
+    }
+
+    to {
+        transform: translateY(-0.5vw);
+    }
+}
+
+.titelskaerm {
+    animation-name: titelskaerm;
+    animation-duration: 1.75s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+#settings_button {
+    background-image: url(Produktion/SVG/settings_menu.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 8vw;
+    height: 8vw;
+    top: 2vw;
+    left: 90vw;
+    position: absolute;
+    z-index: 1;
+    background-size: 100%;
+    cursor: pointer;
+}
+
+/*
+@keyframes titelskaerm {
+    from {
+        transform: translate(10vw);
+        opacity: 100;
+    }
+
+
+    to {
+        transform: translate(-150vw, -150vw);
+        opacity: 0;
+    }
+*/
+
+.dissappear {
+    animation-name: dissappear_kf;
+    animation-duration: .7s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(.59, -0.56, .77, 1.34);
+    animation-fill-mode: forwards;
+
+}
+
+.paused {
+    animation-play-state: paused;
+}
+
+/* effekter */
+.hide {
+    visibility: hidden;
+}
+
+.show {
+    visibility: visible;
+}
+
+.blur {
+    filter: blur(5px) brightness(80%);
+}
+
+.fade_out {
+    animation-name: fadeout_kf;
+    animation-duration: 3.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeout_kf {
+    0% {
+        opacity: 1;
+        transform: translate(0, 0);
+
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(-150vw, -150vw);
+
+    }
+}
+
+.pulse {
+    animation-name: pulse_kf;
+    animation-duration: 1.7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+
+
+@keyframes pulse_kf {
+    0% {
+        transform: scale(0.90);
+
+
+    }
+
+    100% {
+        transform: scale(1);
+
+    }
+}
+
+.spin {
+    animation-name: spin_kf;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+}
+
+@keyframes spin_kf {
+    0% {
+        transform: rotate(0deg);
+
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.wiggle {
+    animation-name: wiggle_kf;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+
+}
+
+@keyframes wiggle_kf {
+    0% {
+        transform: translate(0.2vw) skewY(-5deg);
+
+    }
+
+    100% {
+        transform: translate(0vw) skewY(-10deg);
+    }
+}
+
+.bat {
+    animation-name: bat_kf;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+
+
+}
+
+@keyframes bat_kf {
+    0% {
+        transform: rotate(0deg) skewY(0deg)
+    }
+
+    100% {
+        transform: rotate(3deg) skewY(10deg);
+    }
+}
+
+.smoke {
+    animation-name: smoke_kf;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: linear;
+}
+
+@keyframes smoke_kf {
+    0% {
+        transform: translate(0vw, -5vw);
+    }
+
+    100% {
+        transform: translate(.5vw, 0vw);
+    }
+}
